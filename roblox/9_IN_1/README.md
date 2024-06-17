@@ -17,8 +17,11 @@ http.HttpEnabled = httpEnabled;
 ```
 In the command bar.
 
-You cannot ```require()``` this module normally (```game.ReplicatedStorage.9_IN_1```).
-Instead, do: ```require(game.ReplicatedStorage:FindFirstChild("9_IN_1")```.
+You cannot `require()` this module normally (`game.ReplicatedStorage.9_IN_1`).
+Instead, do:
+```
+require(game.ReplicatedStorage:FindFirstChild("9_IN_1")
+```.
 
 That's all, thanks.
 > Make any changes if something is inaccurate or imperfect.
