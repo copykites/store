@@ -17,5 +17,3 @@ http.HttpEnabled = httpEnabled;
 ```
 Into the command bar.
 > Make any changes if something is inaccurate or imperfect.
-
-That's all, thanks.
