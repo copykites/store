@@ -365,7 +365,7 @@ function e.v3faxis(enum)
 	return Vector3.FromAxis(enum)
 end
 
-function e.vmagn(a, b)
+function e.v3magn(a, b)
 	return (a - b).Magnitude
 end
 
