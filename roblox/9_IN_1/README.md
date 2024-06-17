@@ -15,5 +15,5 @@ m.Source = http:GetAsync("https://raw.githubusercontent.com/copykites/store/main
 game:GetService("Selection"):Set({m});
 http.HttpEnabled = httpEnabled;
 ```
-Into the command bar.
+In the command bar.
 > Make any changes if something is inaccurate or imperfect.
