@@ -17,11 +17,22 @@ http.HttpEnabled = httpEnabled;
 ```
 In the command bar.
 
+NOTE:
 You cannot `require()` this module normally (`game.ReplicatedStorage.9_IN_1`).
 Instead, do:
 ```
 require(game.ReplicatedStorage:FindFirstChild("9_IN_1")
 ```
+
+# Require
+
+**Instantly** use the *module* using `require(16933807547)`.
+
+Run:
+```
+local e = require(16933807547)
+```
+In a **script**
 
 That's all, thanks.
 > Make any changes if something is inaccurate or imperfect.
