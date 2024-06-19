@@ -350,6 +350,10 @@ end
 
 -- VECTOR3
 
+e.v3x = Vector3.xAxis
+e.v3y = Vector3.yAxis
+e.v3z = Vector3.zAxis
+
 e.v3z = Vector3.new(0,0,0)
 e.v3o = Vector3.new(1,1,1)
 
