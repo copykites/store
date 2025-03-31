@@ -3,6 +3,8 @@ InputOverlay.Name = "InputOverlay"
 InputOverlay.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 InputOverlay.Parent = game:GetService("CoreGui")
 
+local hide = false
+
 local D = Instance.new("TextLabel")
 D.Name = "D"
 D.TextWrapped = true
@@ -200,6 +202,11 @@ local uis = game:GetService("UserInputService")
 
 uis.InputBegan:Connect(function(input)
 	local key = input.KeyCode
+	if key == Enum.KeyCode.KeypadFour then
+		InputOverlay.Enabled = hide
+		hide = not hide
+	end
+	
 	if key == Enum.KeyCode.W then
 		InputOverlay.W.TextColor3 = Color3.new(0,0,0)
 		InputOverlay.W.BackgroundColor3 = Color3.new(255,255,255)
@@ -315,4 +322,3 @@ mouse.Button2Up:Connect(function()
 	InputOverlay.C2.TextColor3 = Color3.new(255,255,255)
 	InputOverlay.C2.BackgroundColor3 = Color3.new(0,0,0)
 end)
-
