@@ -11,11 +11,11 @@ D.TextScaled = true
 D.BackgroundColor3 = Color3.new(0.00, 0.00, 0.00)
 D.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Italic)
 D.TextSize = 14
-D.Size = UDim2.new(0.04, 0.00, 0.08, 0.00)
+D.Size = UDim2.new(0.039, 0.00, 0.083, 0.00)
 D.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
 D.Text = "D"
 D.TextColor3 = Color3.new(1.00, 1.00, 1.00)
-D.Position = UDim2.new(0.95, 0.00, 0.90, 0.00)
+D.Position = UDim2.new(0.955, 0.00, 0.901, 0.00)
 D.Parent = InputOverlay
 
 local S = Instance.new("TextLabel")
@@ -150,7 +150,7 @@ C.Size = UDim2.new(0.04, 0.00, 0.04, 0.00)
 C.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
 C.Text = "MB1"
 C.TextColor3 = Color3.new(1.00, 1.00, 1.00)
-C.Position = UDim2.new(0.70, 0.00, 0.95, 0.00)
+C.Position = UDim2.new(0.01, 0.00, 0.95, 0.00)
 C.Parent = InputOverlay
 
 local C2 = Instance.new("TextLabel")
@@ -165,23 +165,23 @@ C2.Size = UDim2.new(0.04, 0.00, 0.04, 0.00)
 C2.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
 C2.Text = "MB2"
 C2.TextColor3 = Color3.new(1.00, 1.00, 1.00)
-C2.Position = UDim2.new(0.74, 0.00, 0.95, 0.00)
+C2.Position = UDim2.new(0.06, 0.00, 0.95, 0.00)
 C2.Parent = InputOverlay
 
-local LeftControltrl = Instance.new("TextLabel")
-LeftControltrl.Name = "LeftControltrl"
-LeftControltrl.TextWrapped = true
-LeftControltrl.BorderSizePixel = 0
-LeftControltrl.TextScaled = true
-LeftControltrl.BackgroundColor3 = Color3.new(0.00, 0.00, 0.00)
-LeftControltrl.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Italic)
-LeftControltrl.TextSize = 14
-LeftControltrl.Size = UDim2.new(0.08, 0.00, 0.04, 0.00)
-LeftControltrl.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
-LeftControltrl.Text = "CTRL"
-LeftControltrl.TextColor3 = Color3.new(1.00, 1.00, 1.00)
-LeftControltrl.Position = UDim2.new(0.70, 0.00, 0.90, 0.00)
-LeftControltrl.Parent = InputOverlay
+local LeftControl = Instance.new("TextLabel")
+LeftControl.Name = "LeftControl"
+LeftControl.TextWrapped = true
+LeftControl.BorderSizePixel = 0
+LeftControl.TextScaled = true
+LeftControl.BackgroundColor3 = Color3.new(0.00, 0.00, 0.00)
+LeftControl.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Italic)
+LeftControl.TextSize = 14
+LeftControl.Size = UDim2.new(0.06, 0.00, 0.04, 0.00)
+LeftControl.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
+LeftControl.Text = "CTRL"
+LeftControl.TextColor3 = Color3.new(1.00, 1.00, 1.00)
+LeftControl.Position = UDim2.new(0.11, 0.00, 0.95, 0.00)
+LeftControl.Parent = InputOverlay
 
 local ShiftLock = Instance.new("ImageLabel")
 ShiftLock.Name = "ShiftLock"
@@ -189,10 +189,10 @@ ShiftLock.BorderSizePixel = 0
 ShiftLock.BackgroundColor3 = Color3.new(1.00, 1.00, 1.00)
 ShiftLock.Visible = false
 ShiftLock.Image = "http://www.roblox.com/asset/?id=137940091129627"
-ShiftLock.Size = UDim2.new(0.03, 0.00, 0.06, 0.00)
+ShiftLock.Size = UDim2.new(0.034, 0.00, 0.059, 0.00)
 ShiftLock.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
 ShiftLock.BackgroundTransparency = 1
-ShiftLock.Position = UDim2.new(0.67, 0.00, 0.94, 0.00)
+ShiftLock.Position = UDim2.new(0.165, 0.00, 0.935, 0.00)
 ShiftLock.Parent = InputOverlay
 
 local uis = game:GetService("UserInputService")
@@ -237,8 +237,8 @@ uis.InputBegan:Connect(function(input)
 		InputOverlay.G.BackgroundColor3 = Color3.new(255,255,255)
 	end
 	if key == Enum.KeyCode.LeftControl then
-		InputOverlay.LeftControltrl.TextColor3 = Color3.new(0,0,0)
-		InputOverlay.LeftControltrl.BackgroundColor3 = Color3.new(255,255,255)
+		InputOverlay.LeftControl.TextColor3 = Color3.new(0,0,0)
+		InputOverlay.LeftControl.BackgroundColor3 = Color3.new(255,255,255)
 	end
 end)
 
@@ -281,8 +281,8 @@ uis.InputEnded:Connect(function(input)
 		InputOverlay.G.BackgroundColor3 = Color3.new(0,0,0)
 	end
 	if key == Enum.KeyCode.LeftControl then
-		InputOverlay.LeftControltrl.TextColor3 = Color3.new(255,255,255)
-		InputOverlay.LeftControltrl.BackgroundColor3 = Color3.new(0,0,0)
+		InputOverlay.LeftControl.TextColor3 = Color3.new(255,255,255)
+		InputOverlay.LeftControl.BackgroundColor3 = Color3.new(0,0,0)
 	end
 end)
 
@@ -315,3 +315,4 @@ mouse.Button2Up:Connect(function()
 	InputOverlay.C2.TextColor3 = Color3.new(255,255,255)
 	InputOverlay.C2.BackgroundColor3 = Color3.new(0,0,0)
 end)
+
