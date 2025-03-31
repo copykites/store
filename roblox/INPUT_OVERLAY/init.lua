@@ -237,8 +237,8 @@ uis.InputBegan:Connect(function(input)
 		InputOverlay.G.BackgroundColor3 = Color3.new(255,255,255)
 	end
 	if key == Enum.KeyCode.LeftControl then
-		InputOverlay.LeftControl.TextColor3 = Color3.new(0,0,0)
-		InputOverlay.LeftControl.BackgroundColor3 = Color3.new(255,255,255)
+		InputOverlay.LeftControltrl.TextColor3 = Color3.new(0,0,0)
+		InputOverlay.LeftControltrl.BackgroundColor3 = Color3.new(255,255,255)
 	end
 end)
 
@@ -281,8 +281,8 @@ uis.InputEnded:Connect(function(input)
 		InputOverlay.G.BackgroundColor3 = Color3.new(0,0,0)
 	end
 	if key == Enum.KeyCode.LeftControl then
-		InputOverlay.LeftControl.TextColor3 = Color3.new(255,255,255)
-		InputOverlay.LeftControl.BackgroundColor3 = Color3.new(0,0,0)
+		InputOverlay.LeftControltrl.TextColor3 = Color3.new(255,255,255)
+		InputOverlay.LeftControltrl.BackgroundColor3 = Color3.new(0,0,0)
 	end
 end)
 
