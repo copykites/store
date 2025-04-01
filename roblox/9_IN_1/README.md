@@ -32,6 +32,7 @@ Type:
 local e = require(16933807547)
 ```
 In a **script**
+(doesn't work rn)
 
 # Outro
 That's all, thanks.
