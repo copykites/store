@@ -8,6 +8,8 @@ end
 if _G.LagPrototype then Notify("LagPrototype", "You are already using LagPrototype."); return end
 _G.LagPrototype = true
 
+Notify("LagPrototype", "Successfully modified client!")
+
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 
