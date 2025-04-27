@@ -3,7 +3,7 @@ _G.BoredomCure = true
 
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+ScreenGui.Parent = game:GetService("CoreGui")
 
 local ClickButton = Instance.new("TextButton")
 ClickButton.Name = "ClickButton"
