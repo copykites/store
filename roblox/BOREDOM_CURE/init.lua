@@ -87,7 +87,7 @@ OldMouseClickSound.Parent = script
 OldMouseClickSound.SoundId = "rbxassetid://1673280232"
 
 local mvm_bought_upgrade = Instance.new("Sound")
-mvm_bought_upgrade = script
+mvm_bought_upgrade.Parent = script
 mvm_bought_upgrade.SoundId = "rbxassetid://14810387808"
 
 local ui_hover_ugd = Instance.new("Sound")
