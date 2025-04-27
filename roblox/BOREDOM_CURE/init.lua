@@ -79,18 +79,22 @@ local ColorCorrectionEffect = Instance.new("ColorCorrectionEffect")
 ColorCorrectionEffect.Parent = game.Lighting
 
 local CoinCollect = Instance.new("Sound")
+CoinCollect.Name = "Coin collect"
 CoinCollect.Parent = script
 CoinCollect.SoundId = "rbxassetid://8646410774"
 
 local OldMouseClickSound = Instance.new("Sound")
+OldMouseClickSound.Name = "Old mouse click sound"
 OldMouseClickSound.Parent = script
 OldMouseClickSound.SoundId = "rbxassetid://1673280232"
 
 local mvm_bought_upgrade = Instance.new("Sound")
+mvm_bought_upgrade.Name = "mvm_bought_upgrade"
 mvm_bought_upgrade.Parent = script
 mvm_bought_upgrade.SoundId = "rbxassetid://14810387808"
 
 local ui_hover_ugd = Instance.new("Sound")
+ui_hover_ugd.Name = "ui_hover_ugd"
 ui_hover_ugd.Parent = script
 ui_hover_ugd.SoundId = "rbxassetid://542332175"
 
