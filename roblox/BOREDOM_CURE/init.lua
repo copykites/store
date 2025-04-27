@@ -1,3 +1,6 @@
+if _G.BoredomCure then return end
+_G.BoredomCure = true
+
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
