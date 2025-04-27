@@ -42,11 +42,11 @@ UserInputService.InputBegan:Connect(function(Input)
 
     if Input.KeyCode == Enum.KeyCode.LeftBracket then
         TARGET_FRAME_RATE = math.max(1, TARGET_FRAME_RATE - 1)
-        Notify("LagPrototype", "Decreased TARGET_FRAME_RATE to " .. TARGET_FPS_LIMIT .. " FPS")
+        Notify("LagPrototype", "Decreased TARGET_FRAME_RATE to " .. TARGET_FRAME_RATE .. " FPS")
     end
 
     if Input.KeyCode == Enum.KeyCode.RightBracket then
         TARGET_FRAME_RATE += 1
-        Notify("LagPrototype", "Increased TARGET_FRAME_RATE to " .. TARGET_FPS_LIMIT .. " FPS")
+        Notify("LagPrototype", "Increased TARGET_FRAME_RATE to " .. TARGET_FRAME_RATE .. " FPS")
     end
 end)
