@@ -56,6 +56,44 @@ ClickCountUI.BackgroundTransparency = 1
 ClickCountUI.Position = UDim2.new(0.09, 0.00, 0.95, 0.00)
 ClickCountUI.Parent = ScreenGui
 
+local TextLabel = Instance.new("TextLabel")
+TextLabel.BorderSizePixel = 0
+TextLabel.BackgroundColor3 = Color3.new(1.00, 1.00, 1.00)
+TextLabel.FontFace = Font.new("rbxasset://fonts/families/Arial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+TextLabel.AnchorPoint = Vector2.new(0.50, 0.50)
+TextLabel.TextSize = 32
+TextLabel.Size = UDim2.new(0.16, 0.00, 0.06, 0.00)
+TextLabel.BorderColor3 = Color3.new(0.00, 0.00, 0.00)
+TextLabel.Text = "+1 click"
+TextLabel.TextColor3 = Color3.new(1.00, 1.00, 1.00)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.37, 0.00, 0.89, 0.00)
+TextLabel.Parent = script
+
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Thickness = 2
+UIStroke.Transparency = 0.2
+UIStroke.Parent = TextLabel
+
+local ColorCorrectionEffect = Instance.new("ColorCorrectionEffect")
+ColorCorrectionEffect.Parent = game.Lighting
+
+local CoinCollect = Instance.new("Sound")
+CoinCollect.Parent = script
+CoinCollect.SoundId = "rbxassetid://8646410774"
+
+local OldMouseClickSound = Instance.new("Sound")
+OldMouseClickSound.Parent = script
+OldMouseClickSound.SoundId = "rbxassetid://1673280232"
+
+local mvm_bought_upgrade = Instance.new("Sound")
+mvm_bought_upgrade = script
+mvm_bought_upgrade.SoundId = "rbxassetid://14810387808"
+
+local ui_hover_ugd = Instance.new("Sound")
+ui_hover_ugd.Parent = script
+ui_hover_ugd.SoundId = "rbxassetid://542332175"
+
 local UIStroke_1 = Instance.new("UIStroke")
 UIStroke_1.Thickness = 2
 UIStroke_1.Transparency = 0.20000000298023224
